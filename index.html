@@ -2,10 +2,18 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,67 +27,71 @@
         <input placeholder="RollNo" />
         <button class="button" onclick="display('sectionMember')">Proceed</button>
     </div>
-    <div id="sectionMember">
+    <div id="sectionMember" class="pes-container">
         <h1>Login as</h1>
         <button onclick="display('sectionTwoRollNos')">1</button>
         <button onclick="display('sectionTwoRollNos')">2</button>
     </div>
-    
-    <div id="sectionTwoRollNos">
+    <div id="sectionTwoRollNos" class="pes-container">
         <h1>Login as</h1>
         <input placeholder="RollNo" />
         <input placeholder="RollNo" />
-        <button onclick="display('sectionThreeRollNos')">Proceed</button>
+        <br/>
+        <button class="button" onclick="display('sectionThreeRollNos')">Proceed</button>
     </div>
-    <div id="sectionThreeRollNos">
-        <h1>Login as</h1>
-        <input placeholder="RollNo" />
-        <input placeholder="RollNo" />
-        <input placeholder="RollNo" />
-        <button onclick="display('sectionFourRollNos')">Proceed</button>
-    </div>
-    <div id="sectionFourRollNos">
+    <div id="sectionThreeRollNos" class="pes-container">
         <h1>Login as</h1>
         <input placeholder="RollNo" />
         <input placeholder="RollNo" />
         <input placeholder="RollNo" />
-        <input placeholder="RollNo" />
-        <button onclick="display('sectionLevelOneofOne')">Proceed</button>
+        <button class="button" onclick="display('sectionFourRollNos')">Proceed</button>
     </div>
-    <div id="sectionLevelOneofOne">
+    <div id="sectionFourRollNos" class="pes-container">
+        <h1>Login as</h1>
+        <input placeholder="RollNo" />
+        <input placeholder="RollNo" />
+        <input placeholder="RollNo" />
+        <input placeholder="RollNo" />
+        <br/>
+        <button class="button" onclick="display('sectionLevelOneofOne')">Proceed</button>
+    </div>
+    <div id="sectionLevelOneofOne" class="pes-container">
         <h1>LEVEL - 1</h1>
-        <img src="" class="question"/>
+        <img src="" class="question" />
         <label>Identify the Component</label>
-        <input placeholder="Answer"/>
-        <button onclick="display('sectionLevelTwoofOne')">Submit</button>
+        <input placeholder="Answer" />
+        <br/>
+        <button class="button" onclick="display('sectionLevelTwoofOne')">Submit</button>
     </div>
-    <div id="sectionLevelTwoofOne">
+    <div id="sectionLevelTwoofOne" class="pes-container">
         <h1>LEVEL - 1</h1>
-        <img src="" class="question"/>
+        <img src="" class="question" />
         <label>Identify the Component</label>
-        <input placeholder="Answer"/>
-        <button onclick="display('sectionLevelOneofTwo')">Submit</button>
+        <input placeholder="Answer" />
+        <br/>
+        <button class="button" onclick="display('sectionLevelOneofTwo')">Submit</button>
     </div>
-    <div id="sectionLevelOneofTwo">
+    <div id="sectionLevelOneofTwo" class="pes-container">
         <h1>LEVEL - 2</h1>
-        <img src="" class="question"/>
+        <img src="" class="question" />
         <label>Identify the Component</label>
-        <input placeholder="Answer"/>
-        <button onclick="display('sectionLevelTwoofTwo')">Submit</button>
+        <input placeholder="Answer" />
+        <br/>
+        <button class="button" onclick="display('sectionLevelTwoofTwo')">Submit</button>
     </div>
-    <div id="sectionLevelTwoofTwo">
+    <div id="sectionLevelTwoofTwo" class="pes-container">
         <h1>LEVEL - 2</h1>
-        <img src="" class="question"/>
+        <img src="" class="question" />
         <label>Identify the Component</label>
-        <input placeholder="Answer"/>
-        <button onclick="display('sectionEnd')">Submit</button>
+        <input placeholder="Answer" />
+        <br/>
+        <button class="button" onclick="display('sectionEnd')">Submit</button>
     </div>
-    <div id="sectionEnd">
+    <div id="sectionEnd" class="pes-container">
         <h1>End</h1>
     </div>
-        <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    <script type="text/javascript"
+        src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
 </body>
 
 </html>
-
-
